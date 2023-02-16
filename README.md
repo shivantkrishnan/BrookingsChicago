@@ -2,10 +2,7 @@
 Repository for all code relevant to [Harvard Economics Labs -- UChicago -- Brookings] Spring 2023
 HCEL x Brookings Institution
 
-Project Lead: Shivant Krishnan
-Project Partners: Ian Seyal, Gregory Wright
 
-Project Outline
 Key Question: How does the presence of Amazon Fulfillment Centers affect regional employment (labor shortages) and economic mobility outcomes for warehouse workers?
 
 A vast body of literature suggests that investments in the warehousing industry for the purpose of jobs and providing opportunities are not achieving what they are supposed to. Warehouse jobs tend to be very attractive in low-income areas that contain job-hungry workers in search of better opportunities, but this comes at a significant cost. In particular, when policymakers discuss the mobility potential of warehouse/logistics sector jobs, they often lump together blue-collar roles with managerial and other high wage positions (De Lara, 2013). Broadly, we hope to disaggregate these roles and understand that the industry wage models are not representative of the average blue-collar warehouse worker and his mobility potential. We construct two models to answer both relevant questions. When examining regional employment, we use county-level employment to population ratio as the variable of interest, along with a difference-in-differences approach to estimate whether employment in some counties is significantly different from others that do not have Amazon Fulfillment Centers. We use a similar approach for economic mobility, but we substitute the variable of interest as workers’ movement between quintiles of the income distribution. Such methods may uncover which sectors tend to suffer labor shortages as a result of Fulfillment Centers opening. Further, the findings will indicate the extent to which warehouses are responsible for an increase in worker mobility outcomes. Ultimately, our findings will address the mobility outcomes and market inefficiencies that result from an increase in warehousing employment. 
