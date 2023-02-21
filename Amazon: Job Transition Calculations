@@ -1,0 +1,34 @@
+import pandas as pd
+
+# Load data and drop observations
+df = pd.read_stata("/Users/shivantkrishnan/Dropbox/HarvardEconomicsLabs/Code/cps_07_22.dta")
+df = df[df["occ2010"] <= 9799] # Drop military
+df = df[df["labforce"] >= 2]
+df["cpsidp"] = df["cpsidp"].astype(int)
+df["cnt"] = df.groupby("cpsidp")["cpsidp"].transform("count")
+df = df[df["cnt"] > 1]
+df = df[(df["sex"] == df["sex"].shift(1)) | (df["race"] == df["race"].shift(1))]
+df = df[df["empsame"] <= 2]
+df["num"] = 1
+
+# Create new variable "quar"
+df.loc[df["month"] < 4, "quar"] = 1
+df.loc[(df["month"] > 3) & (df["month"] < 7), "quar"] = 2
+df.loc[(df["month"] > 6) & (df["month"] < 10), "quar"] = 3
+df.loc[df["month"] > 9, "quar"] = 4
+
+# Create new variable "occmaj"
+df.loc[df["occ2010"] < 431, "occmaj"] = "management"
+df.loc[(df["occ2010"] < 731) & (df["occmaj"] == ""), "occmaj"] = "biz operations"
+df.loc[(df["occ2010"] < 951) & (df["occmaj"] == ""), "occmaj"] = "finance"
+df.loc[(df["occ2010"] < 1241) & (df["occmaj"] == ""), "occmaj"] = "computer"
+df.loc[(df["occ2010"] < 1541) & (df["occmaj"] == ""), "occmaj"] = "arch_eng"
+df.loc[(df["occ2010"] < 1561) & (df["occmaj"] == ""), "occmaj"] = "technicians"
+df.loc[(df["occ2010"] < 1981) & (df["occmaj"] == ""), "occmaj"] = "life, phys, soc science"
+df.loc[(df["occ2010"] < 2061) & (df["occmaj"] == ""), "occmaj"] = "comm and soc services"
+df.loc[(df["occ2010"] < 2151) & (df["occmaj"] == ""), "occmaj"] = "legal"
+df.loc[(df["occ2010"] < 2551) & (df["occmaj"] == ""), "occmaj"] = "education"
+df.loc[(df["occ2010"] < 2921) & (df["occmaj"] == ""), "occmaj"] = "arts, entertainment, media"
+df.loc[(df["occ2010"] < 3541) & (df["occmaj"] == ""), "occmaj"] = "healthcare"
+df.loc[(df["occ2010"] < 3651) & (df["occmaj"] == ""), "occmaj"] = "healthcare support"
+df.loc[(df["occ2010"] < 3951) & (df["occmaj"] == ""), "occmaj"] = "protective
