@@ -1,3 +1,4 @@
+README: we calculate  as the share of transitions (my variable exshr) in total employment in a major occupation category in each quarter (but could do month, just more noisy).
 import pandas as pd
 
 # Load data and drop observations
