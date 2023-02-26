@@ -25,7 +25,7 @@ In order to run the project's scripts, you need to reproduce the virtual environ
 
 ~ % source DIRECTORY/env/bin/activate
 
-(env) ~ % pip install -r requirements.txt
+(env) ~ % pip install -r DIRECTORY/BrookingsChicago/requirements.txt
 
 
 Work should be done in the virtual environment. To go back to base status run the command:
