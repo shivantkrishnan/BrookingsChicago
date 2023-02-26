@@ -15,6 +15,8 @@ License if you want to be fancy
 
 HOW TO RUN
 
+Data set is too large to store on repo, install on local and then store in /Data directory for script to work.
+
 In order to run the project's scripts, you need to reproduce the virtual environment on your local machine. Create a virtual environment, activate it, and then install the requirements to the virtual environment. (Will not be on your global machine) Should look like:
 
 ```
