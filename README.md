@@ -15,6 +15,8 @@ License if you want to be fancy
 
 HOW TO RUN
 
+The Linkdin amazon data set is too large to store on the repository, /cleaning has scripts to shorten the dataset, but make sure you aren't tracking the large one on git, even though it should be locally stored in /Data.
+
 In order to run the project's scripts, you need to reproduce the virtual environment on your local machine. Create a virtual environment, activate it, and then install the requirements to the virtual environment. (Will not be on your global machine) Should look like:
 
 ```
@@ -28,3 +30,7 @@ Work should be done in the virtual environment. To go back to base status run th
 ```
 (env) ~ % deactivate
 ```
+
+cleaning:
+  - amz.py: First argument is state one wants to parse to.
+  - listJobs.py: First argument is file to parse. Lists the job mapped roles set by Brookings to command line.
