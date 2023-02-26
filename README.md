@@ -3,15 +3,16 @@
 What to include:
 
 Project Title
+
 Project Description
   - Describe what the code does in relation to research
   - Why we used given technologies
   - Challenges we have to help any future development
-Table of contents (If project gets large - I don't expect it will be needed)
-How to install and run
-How to use the code
-Credits for team members
-License if you want to be fancy
+  - Table of contents (If project gets large - I don't expect it will be needed)
+  - How to install and run
+  - How to use the code
+  - Credits for team members
+  - License if you want to be fancy
 
 HOW TO RUN
 
@@ -20,9 +21,9 @@ The Linkdin amazon data set is too large to store on the repository, /cleaning h
 In order to run the project's scripts, you need to reproduce the virtual environment on your local machine. Create a virtual environment, activate it, and then install the requirements to the virtual environment. (Will not be on your global machine) Should look like:
 
 ```
-~ % python3 -m venv EcLabs/env
-~ % source EcLabs/env/bin/activate
-(env) ~ % pip install -r requirements.txt
+~ % python3 -m venv DIR/env
+~ % source DIR/env/bin/activate
+(env) ~ % pip install -r DIR/BrookingsChicago/requirements.txt
 ```
 
 Work should be done in the virtual environment. To go back to base status run the command:
@@ -30,6 +31,7 @@ Work should be done in the virtual environment. To go back to base status run th
 ```
 (env) ~ % deactivate
 ```
+
 
 cleaning:
   - amz.py: First argument is state one wants to parse to.
