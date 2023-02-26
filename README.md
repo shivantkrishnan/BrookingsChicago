@@ -4,7 +4,7 @@ What to include:
 
 Project Title
 
-Project Description
+Project Description:
   - Describe what the code does in relation to research
   - Why we used given technologies
   - Challenges we have to help any future development
@@ -21,9 +21,9 @@ Data set is too large to store on repo, install on local and then store in /Data
 In order to run the project's scripts, you need to reproduce the virtual environment on your local machine. Create a virtual environment, activate it, and then install the requirements to the virtual environment. (Will not be on your global machine) Should look like:
 
 
-~ % python3 -m venv EcLabs/env
+~ % python3 -m venv DIRECTORY/env
 
-~ % source EcLabs/env/bin/activate
+~ % source DIRECTORY/env/bin/activate
 
 (env) ~ % pip install -r requirements.txt
 
