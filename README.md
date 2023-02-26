@@ -3,15 +3,16 @@
 What to include:
 
 Project Title
+
 Project Description
   - Describe what the code does in relation to research
   - Why we used given technologies
   - Challenges we have to help any future development
-  -Table of contents (If project gets large - I don't expect it will be needed)
-  -How to install and run
-  -How to use the code
-  -Credits for team members
-  -License if you want to be fancy
+  - Table of contents (If project gets large - I don't expect it will be needed)
+  - How to install and run
+  - How to use the code
+  - Credits for team members
+  - License if you want to be fancy
 
 HOW TO RUN
 
@@ -21,7 +22,9 @@ In order to run the project's scripts, you need to reproduce the virtual environ
 
 
 ~ % python3 -m venv EcLabs/env
+
 ~ % source EcLabs/env/bin/activate
+
 (env) ~ % pip install -r requirements.txt
 
 
