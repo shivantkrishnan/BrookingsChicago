@@ -12,14 +12,18 @@ def group(state:str):
     op = join(output_path, output)
     df = pd.read_csv(inp, sep=',')
     ndf = df[df["state"] == state]
-    ndf = ndf[ndf["job_category"] == "Operations"]
 
     jl = join(output_path, 'jobs_map.txt')
     with open(jl, 'r') as f:
         s = f.read()
         jobs = s.split('\n')
 
-    ndf = ndf[ndf["mapped_role"].isin(jobs)]
+
+    ids = ndf.loc[(ndf['mapped_role'].isin(jobs)) & (ndf['company_cleaned'] == 'amazon'), ['user_id']]
+
+    ndf = ndf[ndf['user_id'].isin(ids['user_id'].to_list())]
+    ndf = ndf.sort_values(by=['user_id'])
+
     ndf.to_csv(op)
 
 
