@@ -22,7 +22,7 @@ def group(state:str):
     ids = ndf.loc[(ndf['mapped_role'].isin(jobs)) & (ndf['company_cleaned'] == 'amazon'), ['user_id']]
 
     ndf = ndf[ndf['user_id'].isin(ids['user_id'].to_list())]
-    ndf = ndf.sort_values(by=['user_id'])
+    ndf = ndf.sort_values(by=['user_id', 'startdate', 'enddate'])
 
     ndf.to_csv(op)
 
