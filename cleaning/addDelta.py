@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 from os.path import dirname, join
+import numpy as np
 
 def addDelta(input:str):
 
@@ -12,7 +13,7 @@ def addDelta(input:str):
     df = pd.read_csv(inp, sep=',')
 
     df['delta'] = -1 * df['salary'].diff(periods=-1)
-
+    df['transition'] = np.where(df['user_id'] == df['user_id'].shift(-1), True, False)
 
     df.to_csv(op)
 
