@@ -33,6 +33,11 @@ Work should be done in the virtual environment. To go back to base status run th
 ```
 
 
-cleaning:
-  - amz.py: First argument is state one wants to parse to.
-  - listJobs.py: First argument is file to parse. Lists the job mapped roles set by Brookings to command line.
+/cleaning:
+  - amz.py: First argument is the state one wants to shorten the larger dataset to. It also filters for the specific job titles that one is interested in. Finally it sorts by user_id and then by startdate at the position. It's necessary to run this script before any others as the others rely on the data being sorted.
+  - listJobs.py: First argument is file to parse. Do not include the directory, just the file name. The file to parse must be stored in the /Data directory. Lists the job mapped roles set by Brookings to command line.
+  - addDelta.py: Input is same as listJobs.py. Necessary file to run before any analysis. Adds the difference in salary between next row of the csv to current. Also adds an additional column which is TRUE if the worker completes a transition after this position and FALSE otherwise.
+
+
+/Analysis:
+- get_anal.py: First argument is the same as for listJobs.py and addDelta.py. Prints the features of note of input file.
