@@ -1,0 +1,29 @@
+OLS Regression Results
+==============================================================================
+Dep. Variable:                 salary   R-squared:                       0.000
+Model:                            OLS   Adj. R-squared:                 -0.000
+Method:                 Least Squares   F-statistic:                    0.3640
+Date:                Tue, 21 Mar 2023   Prob (F-statistic):              0.779
+Time:                        11:39:00   Log-Likelihood:            -1.6633e+07
+No. Observations:             1354268   AIC:                         3.327e+07
+Df Residuals:                 1354264   BIC:                         3.327e+07
+Df Model:                           3
+Covariance Type:            nonrobust
+=======================================================================================
+coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept            2.122e+13   2.35e+13      0.901      0.367   -2.49e+13    6.74e+13
+Time_Period         -2.122e+13   2.35e+13     -0.901      0.367   -6.74e+13    2.49e+13
+Treated              2.141e+12   1.96e+13      0.109      0.913   -3.63e+13    4.05e+13
+Time_Period:Treated -2.141e+12   1.96e+13     -0.109      0.913   -4.05e+13    3.63e+13
+==============================================================================
+Omnibus:                   386232.998   Durbin-Watson:                   1.995
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           971078.677
+Skew:                           1.578   Prob(JB):                         0.00
+Kurtosis:                       5.692   Cond. No.                     1.05e+12
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 2.46e-18. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
