@@ -1,0 +1,27 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 salary   R-squared:                       0.002
+Model:                            OLS   Adj. R-squared:                  0.002
+Method:                 Least Squares   F-statistic:                     661.7
+Date:                Wed, 22 Mar 2023   Prob (F-statistic):               0.00
+Time:                        22:55:16   Log-Likelihood:            -1.0272e+07
+No. Observations:              836365   AIC:                         2.054e+07
+Df Residuals:                  836361   BIC:                         2.054e+07
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================
+                          coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------------
+Intercept            7.759e+04     81.193    955.574      0.000    7.74e+04    7.77e+04
+Time_Period          -937.2879    114.824     -8.163      0.000   -1162.339    -712.237
+Treated             -2.892e+04    768.895    -37.619      0.000   -3.04e+04   -2.74e+04
+Time_Period:Treated   1.14e+04   1087.381     10.484      0.000    9268.933    1.35e+04
+==============================================================================
+Omnibus:                   262900.702   Durbin-Watson:                   1.424
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           790966.777
+Skew:                           1.649   Prob(JB):                         0.00
+Kurtosis:                       6.438   Cond. No.                         24.9
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
