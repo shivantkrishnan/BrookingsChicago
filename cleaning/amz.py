@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 from os.path import dirname, join
+import numpy as np
 
 # Creates smaller csv with the data we care about and
 # in specific location.
@@ -23,6 +24,16 @@ def group(state:str, file:str):
         ndf = ndf[ndf['user_id'].isin(ids['user_id'].to_list())]
 
     ndf = ndf.sort_values(by=['user_id', 'startdate', 'enddate'])
+
+    ndf['transition'] = np.where(ndf['user_id'] == ndf['user_id'].shift(-1), 1, 0)
+    ndf['transition'] = np.where((ndf['transition'] == 1) & (ndf['mapped_role'].isin(jobs)), 1, 0)
+    ndf['Time_Period'] = ndf['transition'].shift(1)
+    ndf['Time_Period'] = ndf['Time_Period'] + ndf['transition']
+    ndf = ndf[ndf['Time_Period'] == 1]
+    ndf['Time_Period'] = ndf['Time_Period'] - ndf['transition']
+    
+    ndf['Treated'] = np.where((ndf['Time_Period'] == 0) & (ndf['company_cleaned'] == 'amazon'), 1, 0)
+    ndf['Treated'] = ndf['Treated'] + ndf['Treated'].shift(1)
 
     ndf.to_csv(op)
 
