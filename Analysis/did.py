@@ -17,24 +17,6 @@ def run_did(filename:str):
         s = f.read()
         jobs = s.split('\n')
 
-    def tran0(row):
-        if row['transition'] == True and row['mapped_role'] in jobs:
-            return 0
-        return -1
-
-    def tran1(row):
-        if row['Time_Period1'] == 1 and row['Time_Period'] == -1:
-            return 1
-
-    df['Time_Period'] = df.apply(tran0, axis=1)
-    df['Time_Period1'] = np.where((df['transition'].shift(1) == 0), 1, -1)
-    df['Time_Period'] = df.apply(tran1, axis=1)
-
-    df = df[df['Time_Period'] != -1]
-
-    df['Treated'] = np.where(((df['Time_Period'] == 0) & (df['company_cleaned'] == 'amazon')), 1, -1)
-    df['Treated'] = np.where(((df['Treated'] != 1) & (df['Time_Period'] == 1) & (df['company_cleaned'].shift(1) == 'amazon')), 1, 0)
-
     reg_exp = 'salary ~ Time_Period + Treated + Time_Period*Treated'
     y_train, X_train = dmatrices(reg_exp, df, return_type='dataframe')
 
