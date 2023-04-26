@@ -1,0 +1,117 @@
+
+Call:
+lm(formula = salary ~ period + cross + treatment, data = full)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-38244 -13368  -6216   7324 505113 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 37639.68      18.89 1992.47   <2e-16 ***
+period        847.38      21.26   39.86   <2e-16 ***
+cross        1487.74     114.28   13.02   <2e-16 ***
+treatment   -2108.33      95.66  -22.04   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22150 on 6716938 degrees of freedom
+Multiple R-squared:  0.0003726,	Adjusted R-squared:  0.0003722 
+F-statistic: 834.5 on 3 and 6716938 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = logsalary ~ period + cross + treatment, data = full)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-4.9639 -0.3013 -0.0496  0.3038  2.7732 
+
+Coefficients:
+              Estimate Std. Error  t value Pr(>|t|)    
+(Intercept) 10.3928809  0.0004276 24306.66   <2e-16 ***
+period       0.0399315  0.0004812    82.99   <2e-16 ***
+cross        0.0611509  0.0025865    23.64   <2e-16 ***
+treatment   -0.0479267  0.0021652   -22.14   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5013 on 6716938 degrees of freedom
+Multiple R-squared:  0.001268,	Adjusted R-squared:  0.001267 
+F-statistic:  2842 on 3 and 6716938 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = f, data = full_fe_matrix)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-53673 -12743  -5921   7184 504813 
+
+Coefficients: (1 not defined because of singularities)
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  55592.04      60.20  923.43   <2e-16 ***
+period       -1362.46      21.33  -63.87   <2e-16 ***
+cross        -1120.77     111.97  -10.01   <2e-16 ***
+treatment    -3349.01      93.72  -35.73   <2e-16 ***
+X0          -15987.52     147.39 -108.47   <2e-16 ***
+X1          -16373.77     157.50 -103.96   <2e-16 ***
+X2          -16294.97     147.70 -110.32   <2e-16 ***
+X3          -17010.77     140.17 -121.36   <2e-16 ***
+X4          -17151.14     130.14 -131.79   <2e-16 ***
+X5          -16789.92     121.77 -137.89   <2e-16 ***
+X6          -16947.40     118.15 -143.44   <2e-16 ***
+X7          -17066.87     113.10 -150.90   <2e-16 ***
+X8          -17269.27     106.62 -161.97   <2e-16 ***
+X9          -17509.72     102.54 -170.76   <2e-16 ***
+X10         -17518.25      95.06 -184.29   <2e-16 ***
+X11         -18016.55      97.06 -185.63   <2e-16 ***
+X12         -18580.62      96.24 -193.06   <2e-16 ***
+X13         -18997.58      92.51 -205.36   <2e-16 ***
+X14         -19336.88      86.84 -222.67   <2e-16 ***
+X15         -19729.99      81.57 -241.87   <2e-16 ***
+X16         -20373.69      78.41 -259.84   <2e-16 ***
+X17         -20683.96      76.17 -271.55   <2e-16 ***
+X18         -20796.94      75.08 -276.99   <2e-16 ***
+X19         -20429.99      75.93 -269.07   <2e-16 ***
+X20         -20779.78      71.56 -290.39   <2e-16 ***
+X21         -20968.89      69.29 -302.62   <2e-16 ***
+X22         -20362.48      67.38 -302.18   <2e-16 ***
+X23         -19406.62      66.39 -292.32   <2e-16 ***
+X24         -18733.32      65.49 -286.05   <2e-16 ***
+X25         -17430.01      65.10 -267.75   <2e-16 ***
+X26         -16385.85      64.88 -252.57   <2e-16 ***
+X27         -15442.85      64.45 -239.62   <2e-16 ***
+X28         -13492.39      64.13 -210.38   <2e-16 ***
+X29         -12201.00      64.52 -189.11   <2e-16 ***
+X30          -9878.20      65.82 -150.09   <2e-16 ***
+X31          -6001.27      66.65  -90.04   <2e-16 ***
+X32                NA         NA      NA       NA    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21670 on 6716906 degrees of freedom
+Multiple R-squared:  0.04337,	Adjusted R-squared:  0.04337 
+F-statistic:  8701 on 35 and 6716906 DF,  p-value: < 2.2e-16
+
+
+Call:
+lm(formula = salary ~ period + cross + treatment, data = full)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-38244 -13368  -6216   7324 505113 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 37639.68      18.89 1992.47   <2e-16 ***
+period        847.38      21.26   39.86   <2e-16 ***
+cross        1487.74     114.28   13.02   <2e-16 ***
+treatment   -2108.33      95.66  -22.04   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 22150 on 6716938 degrees of freedom
+Multiple R-squared:  0.0003726,	Adjusted R-squared:  0.0003722 
+F-statistic: 834.5 on 3 and 6716938 DF,  p-value: < 2.2e-16
+
