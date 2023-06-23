@@ -1,0 +1,444 @@
+\documentclass[11pt]{article}
+\usepackage{adjustbox}
+\usepackage{lipsum}% example text
+
+\usepackage{chngpage}
+\usepackage{graphics}
+\usepackage[font=scriptsize]{caption}
+
+\input{preamble.tex}
+\usepackage[capitalize]{cleveref}
+\begin{document}
+\title{\textbf{Airline Service to Smaller Communities}}
+\author{Harvard College Economic Labs}
+\date{Fall 2022}
+\begin{figure}[t]
+\centering
+\includegraphics[width=5cm]{Eclabs_logo.png}
+\end{figure}
+
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Team and Project Overview}
+\subsection{Harvard College Economics Labs}
+\subsection{USDOT OIG}
+\subsection{Project Overview}
+
+\section{Historical context}
+\subsection{Pre-Covid trends}
+%Summarize the previous report 
+
+\subsection{Coronavirus}
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{PassengerLevels.png}}
+\caption{Percent Change in Passengers by Community Size}
+\label{percent_change_passengers}
+\end{figure}
+
+\cref{percent_change_passengers} depicts the percentage change in the number of passengers flying from origin airports in each quintile size community over January 2018 to June 2022. The data was drawn from the T100 database, which divides communities into 5 quintiles based on population size. Quintile 1 represents the smallest communities and Quintile 5 corresponds to the largest. From January 2018 to January 2020, seasonal variation is observed for all community sizes, with passenger levels peaking in the summer months of July-August and the holiday months of October-January. Small communities experienced the highest magnitude of seasonal variations, with passenger levels peaking at 43.9\% and 60.4\% above baseline levels in July 2018 and July 2019, respectively.
+
+\-\hspace{0.5cm} Across all community sizes, the total number of passengers generally increased from January 2018 to January 2020. Large communities experienced the smallest increase over this period of 3.1\% while small communities experienced the largest increase of 19.6\%. The levels of growth were generally higher for communities which have fewer people: small-medium communities saw passenger levels increase by 16.0\%, medium communities by 11.6\%, and medium-large communities by 9.6\%. 
+
+\-\hspace{0.5cm} Between January and April 2020, the number of passengers across all communities decreased significantly. Passengers from small communities fell to 94.7\% below baseline levels. The smallest magnitude of decline was for medium-large communities (to 94.1\% below baseline) and largest for large communities (to 96.1\% below baseline). Overall, all communities saw an average decrease to 94.8\% below baseline with a range of 2.0\%.
+
+\-\hspace{0.5cm} Passenger levels began increasing dramatically from April 2020 to July 2021. Over this period, small communities experienced the largest increase in passenger levels of all communities, increasing to 60.1\% above baseline, a net increase of 154.8\%. Every community size had passenger levels above baseline by July 2021 with the exception of large communities, which increased to below 0.4\% baseline, a net increase of 95.7\%. One possible explanation is the increase in travel demand during Summer 2021.
+
+\-\hspace{0.5cm} By January 2022, passengers from small communities decreased to 3.1\% lower than baseline, while passengers from large communities decreased significantly to 31.9\% lower than baseline. By June 2022, passenger levels from all communities have exceeded January 2018 levels by over 10\%.
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{SeatLevels.png}}
+\caption{Percent Change in Seats by Community Size}
+\label{percent_change_seats}
+\end{figure}
+
+\cref{percent_change_seats} is analogous to \cref{percent_change_passengers}, but shows the percentage change in the number of total seats offered. Similar to passenger levels, the number of seats increased in all communities from January 2018 to January 2020. During this period, the smallest increase was 3.8\% above for large communities, and the highest increase was 15.9\% for small communities. 
+
+\-\hspace{0.5cm} Between January 2020 and April 2020, seat levels decreased significantly for all communities. Relative to all communities, small communities experienced the largest net decrease of 82.7\% while large communities experienced the smallest net decrease in seat levels of 64.0\%. However, while the most pronounced decrease in passenger levels began in February 2020, the most pronounced decrease in seat levels began in March 2020. Indeed, from February 2020 to March 2020, passenger levels experienced a net average decrease of 46.8\% of baseline. Over the same period, seat levels experienced a net average decrease of only 5.9\% of baseline. This suggests that the decline in seat levels due to the pandemic lagged the decrease in passenger levels, although the specific lag time is uncertain because passenger and seat levels are only recorded at a monthly level.
+
+\-\hspace{0.5cm} Seat levels began to increase between April 2020 and July 2021, when figures for small communities were much higher than other communities. In July 2021, seats in small communities were 49.0\% higher than baseline, and seat levels increased in all communities except for large ones, where they reached 14.6\% lower than baseline. After July 2021, seat levels began to decrease, most for large communities, which decreased 16.6\%. However, from February 2022 to June 2022, the number of seats was increasing for all community sizes. That being said, seat levels for medium-large and large communities were still below baseline levels.
+
+\subsubsection{Public health}
+
+\subsubsection{Government regulation}
+
+\textbf{A Timeline of Major Federal Mask/Vaccine Policies}
+\begin{itemize}
+    \item \underline{February 2020}: The CDC does not recommend the use of face masks for the general public.
+    
+    \item \underline{April 2020}: CDC urges all Americans over age 2 to wear a mask outside of their homes. 
+    
+    \item \underline{September 2020}: CDC tells a Senate committee that masks are the most important tool for combating the pandemic.
+
+    \item \underline{December 2020}: FDA grants emergency use authorization to the Pfizer and Moderna vaccines.
+    
+    \item \underline{January 2021}: Biden's executive order imposes a mask requirement for “airports, commercial aircraft, trains, public maritime vessels (including ferries), intercity bus services, and all forms of public transportation as defined in section 5302 of title 49, United States Code.”
+    
+    \item \underline{March 2021}: CDC says fully vaccinated individuals can gather in small groups indoors without masks.
+    
+    \item \underline{April 2021}: CDC says fully vaccinated people usually don’t need to wear masks outdoors, but should still mask indoors and in large public spaces.
+    
+    \item \underline{May 2021}: CDC says fully vaccinated people don’t need masks in most settings.
+    
+    \item \underline{June 2021}: CDC announces it is not requiring people to wear masks while outdoors on public conveyances or outdoors in transportation hubs.
+    
+    \item \underline{February 2022}: CDC announces that masks are not required on buses or vans operated by public/private school systems.
+    
+    \item \underline{April 2022}: A federal court rules to end the CDC’s order requiring masks on public transportation conveyances and at transportation hubs.
+\end{itemize}
+
+\subsubsection{Airline policies}
+\cref{airline_policies_table} summarizes the mask and seat policies for a range of airlines types. While mask requirements were mostly consistent across these carriers, they had varying seat policies.
+
+\begin{table}[htbp!]
+\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Airline Name} & \textbf{Airline Type} & \textbf{Mask Requirement} & \textbf{Seat Policies}                                                                                                                                                                                                                                           \\ \hline
+American Airlines     & Mainline Legacy       & May 2020 to April 2022.   & At 85 percent capacity from April 2020 to July 2020. Capacity restraints dropped in July 2020.                                                                                                                                                                   \\ \hline
+Delta Airlines        & Mainline Legacy       & May 2020 to April 2022.   & Blocked the booking of middle seats from April 2020 to May 2021.                                                                                                                                                                                                 \\ \hline
+United Airlines       & Mainline Legacy       & May 2020 to April 2022.   & Blocked the booking of middle seats from April 2020 to July 2020.                                                                                                                                                                                                \\ \hline
+Southwest Airlines    & Mainline LCC          & May 2020 to April 2022.   & Sold 67 percent of seats from May 2020 to December 2020.                                                                                                                                                                                                         \\ \hline
+JetBlue Airlines      & Mainline LCC          & April 2020 to April 2022. & Various restrictions from May 2020 to January 2021. \\ \hline
+Allegiant Airlines    & Mainline ULCC         & July 2020 to April 2022.  & No restrictions.                                                                                                                                                                                                                                                   \\ \hline
+Spirit Airlines       & Mainline ULCC         & May 2020 to April 2022.   & No restrictions.                                                                                                                                                                                                                                                   \\ \hline
+\end{tabular}
+\caption{Airline Policies by Major Carrier}
+\label{airline_policies_table}
+\end{table}
+
+%Delays
+\subsubsection{Delays}
+
+\cref{median_delay_monthly} depicts the median length of departure delay for each community size group per month from 2019 to 2021. This includes only flights with a delay of at least 1 minute. Some flights in the database reported an on-time departure (a delay of 0 minutes), an early departure (a negative delay), or did not report departure status, but those are not included here. 
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=7in, height=2in]{median delay monthly.png}}
+\caption{Median Length of Departure Delay by Community Size (Monthly) Conditional on Delay $\geq 1$ minute}
+\label{median_delay_monthly}
+\end{figure}
+
+The median length of departure delay was fairly consistent in 2019, and there was a similar trend across all five community size groups. Throughout 2020, however, there is a significant difference between the median departure delays of the smaller communities and those of the larger communities. Small and medium-small communities experienced a spike in median departure delay time in April 2020, while the three larger community size groups saw their median departure delay time decrease. Small and medium-small communities experienced fluctuating median departure delays during the latter half of 2020 and the beginning of 2021, while the median departure delays for the medium, medium-large and large communities remained consistently lower than in 2019. This difference in median departure delay trends begins to lessen in late 2021 until the medians of all community size groups start to follow the same trend.  
+\-\hspace{0.5cm} The spikes in median departure delay in the small and medium-small communities in 2020 may be due to a small sample size. With fewer departures from smaller communities compared to the other size groups - especially in April 2020 - any outliers (namely, extremely long departure delays) will have significant effects on the median length of departure delay. \cref{flight_counts_2019},  \cref{flight_counts_2020}, and \cref{flight_counts_2021} depict the total number of flights and the number of flights with a reported departure delay of at least one minute from each community size group in 2019, 2020, and 2021. 
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[scale=1.0]{flight counts 2019.png}}
+\caption{Number of Flights (total and with a reported delay of  $\geq 1$ minute) in each Community Size Group (2019)}
+\label{flight_counts_2019}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[scale=1.0]{flight counts 2020.png}}
+\caption{Number of Flights (total and with a reported delay of  $\geq 1$ minute) in each Community Size Group (2020)}
+\label{flight_counts_2020}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[scale=1.0]{flight counts 2021.png}}
+\caption{Number of Flights (total and with a reported delay of  $\geq 1$ minute) in each Community Size Group (2021)}
+\label{flight_counts_2021}
+\end{figure}
+
+The small and medium-small communities consistently had fewer departures than the three large community size groups. In 2020, the flight counts from the smaller communities are so low that it is possible that this small sample size is causing the median departure delay to become skewed. 
+
+%Cancellations
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{Percent Change in Cancellations by Community Size.png}}
+  \label{Percent Change in Cancellations by Community Size}
+  \caption{Percent Change in Cancellations by Community Size}
+\end{figure}
+Next, we examined the percent change in cancellation by community size from a baseline of January 2018. The number of cancellations increased slightly from January 2018 to November 2019, but then we see sharp dips until June 2020. Notably, flights from smaller communities had a slightly smaller percent decrease. And throughout the recovery, from April 2020 to April 2022, smaller communities had a consistently higher percent change in number of cancellations than did larger communities. Unlike the trend in the delay data, the number of cancellations across community sizes have not not yet returned to pre-pandemic levels. \newline
+
+
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{Percentage of Flights Cancelled by Community Size.png}}
+  \label{Percentage of Flights Cancelled by Community Size}
+    \caption{Percentage of Flights Cancelled by Community Size}
+\end{figure}
+\cref{Percentage of Flights Cancelled by Community Size} depicts the percentage of flights canceled by each community size. From January 2018 to January 2020, cancellations remained relatively constant, hovering at around 4\% for all community sizes. In March and April 2020, the percentages of flights canceled skyrocketed, likely due to transit restrictions, shutdowns, and fear of spreading COVID in the United States. Just two months later, in June 2020, cancellation rates were back to normal. Airports servicing all community sizes adapted very quickly to trim down the total number of departures, and so as a result, a smaller percentage of the flights were canceled. Indeed, looking at the two graphs of the cancellation data in tandem, we can see that while the total number of cancellations stayed low during the recovery compared to the 2018 baseline, the percentage of total flights canceled remained very similar to the 2018 baseline. The only two main fluctuations occurred in February 2021 and January 2022. Perhaps these brief surges correspond to the spread of Delta and Omicron variants, though it is hard to draw any conclusions without further data. \newline
+
+%Pricing
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=3in]{Average Meanfare Over Time by Community Size.png}}
+  \label{Average Meanfare Over Time by Community Size}
+    \caption{Average Meanfare Over Time by Community Size}
+\end{figure}
+First, we examined the change in average meanfare over time by quintile (\cref{Average Meanfare Over Time by Community Size}). Relative pricing seems to have kept steady over the past decade, with average meanfare significantly higher for flights from origin quintile 1. These higher prices might be due to the fact that smaller airports tend to have fewer routes per day, mainly to larger airport hubs, so carriers servicing those routs can charge more without a significant decrease  in demand. Interestingly, during the pandemic, although all quintiles experienced pricing drops, the relative differentials between different communities stayed fairly constant to pre-pandemic prices. Now, prices appear to be approaching pre-pandemic levels across the board.
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=3in]{Percent Change in Average Meanfare by Mainline.png}}
+  \label{Percent Change in Average Meanfare by Mainline}
+    \caption{Percent Change in Average Meanfare by Mainline Carrier}
+\end{figure}
+\-\hspace{0.5cm} Prior to the pandemic, price changes among mainline carriers were relatively similar. However, during the onset of the pandemic, the prices of American Airlines were significantly lower than Delta and American. Moreover, from Q3 2020 to Q2 2021, Delta’s prices were significantly higher than the other two carriers. This higher price may be connected to Delta’s continued capacity restrictions during the pandemic. Even as the pandemic continued to subside, the prices for American Airlines still had a relatively larger drop compared to the other mainline carriers.
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2.7in]{Percent Change in Meanfare American.png}}
+  \label{Percent Change in Meanfare American}
+    \caption{Percent Change in Meanfare by Community Size for American Airlines}
+\end{figure}
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2.7in]{Percent Change in Meanfare United.png}}
+  \label{Percent Change in Meanfare United}
+    \caption{Percent Change in Meanfare by Community Size for United Airlines}
+\end{figure}
+American Airlines differs from the other two mainline carriers in that small community prices were many times increasing prior to the pandemic. Moreover, when the pandemic began, the drop in prices for small communities relative to the other-sized communities is not as large for American airlines. For Delta and United Airlines, medium and small communities generally have lower prices. At the onset of the pandemic, we also find that the largest relative drop was among flights originating from larger communities. However, these relative price drops were transient and, for Delta and American, large community prices recovered very quickly and soon had relatively lower drops compared to other-sized communities. 
+
+
+
+
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=3in]{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 1.png}}
+  \label{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 1}
+\caption{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 1}
+\end{figure}
+Next, we further examined percent change in average meanfares for each individual quintile (\cref{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 1}, \cref{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 3}, and \cref{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 5}). For origin quintile 1, Southwest cut prices during the pandemic the most, and their average meanfare is still far below pre-pademic levels. For other quintiles, however, Southwest cut prices significantly less. In contrast, Alaska Air cut prices for small communities far less than other mainline characters, but seemed to cut prices more for medium and large communities. Overall though, we see fairly similar price cuts across the board, and each community is approaching pre-pandemic pricing across all mainline carriers.
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=3in]{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 3.png}}
+  \label{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 3}
+  \caption{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 3}
+
+\end{figure}
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=3in]{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 5.png}}
+  \caption{Percent Change in Average Price Over Time by Ticketing Carrier - Origin Quintile 5}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{Price Premiums.png}}
+  \caption{Price Premiums for Small Communities for Various Carriers}
+  \label{Price Premiums}
+\end{figure}
+This figure representing small community price premiums for the mainline carriers and one LCC (Southwest) shows a very significant increase in price premiums for small communities at the start of the pandemic for mainline carriers. This trend is reversed for Southwest, an LCC, whose price premium increase for small communities lagged behind. This change in premiums for the mainline carriers might be better attributed to the greater drop in price for large communities rather than an increase in price for small communities. A large decline in small community premiums occurs at the beginning of 2021 as large community prices recover. As we move out of the pandemic, we see small community price premiums beginning to increase.
+
+
+\newline
+
+\section{Policy effects}
+\subsection{Mainline Legacy Carriers}
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{Change in Passengers.png}}
+  \caption{Percent Change in Total Passengers Per Month for Mainline Carriers}
+  \label{mainline_passengers}
+\end{figure}
+
+As illustrated by the graph, Delta Airlines, despite its capacity restrictions, did not have a significantly larger drop in their total passengers and instead had losses that were similar to United and American. This is because Delta had a lower decrease in departures which was likely done to ensure its service did not lag behind during its period of capacity restrictions. We do, however, see a significant jump in Delta’s relative passengers when its capacity restrictions ended which can suggest that Delta’s capacity restrictions did still have a noticeable effect on its passenger numbers.\newline
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{Percent Change Passengers Delta.png}}
+  \caption{Delta's Percent Change in Total Passengers Per Month by Community Size}
+  \label{Delta's Percent Change in Passengers}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{Percent Change passengers United.png}}
+  \caption{United's Percent Change in Total Passengers Per Month by Community Size}
+  \label{United's Percent Change in Passengers}
+\end{figure}
+
+The goal of \ref{delta_passengers} and \ref{United's Percent Change in Passengers} is to explore whether Delta’s capacity restrictions had an effect on its service to specific community types. As indicated by the graphs, Delta ended its capacity restrictions in May 2021 while United ended its restrictions in July 2020. When focusing on small communities, it is evident based on the graphs that small community service for Delta had a larger loss than the other four community sizes while small community service for United often had a much lower loss than other-sized communities. After capacity restrictions were removed for Delta, we see that the relative loss of service for small communities immediately becomes lower and becomes more similar to other communities. This trend likely stems from the fact that airlines provide relatively smaller service to small communities and did not have an incentive (or the infrastructure) to increase departures from smaller communities like they would be easily able to for larger communities. As such, the few flights that small communities had from Delta could not be filled to capacity leading to significantly lower passenger numbers for small communities on Delta flights.\newline
+
+\-\hspace{0.5cm} Further evidence for this conjecture comes from \ref{percent_capacity_mainline} that illustrates the percent capacity filled by each mainline legacy carrier. Delta, during its capacity restrictions, had a significantly lower percent capacity filled compared to the other two legacy carriers. Once Delta removed its capacity restraints, its percent capacity filled very quickly reached the levels of the other legacy carriers illustrating that Delta’s capacity restrictions were prohibitive. Based on this evidence, it is even more evident that Delta’s capacity restrictions had a greater negative effect on small communities than on other-sized communities.\newline
+
+
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{Holding Capacity by Mainline.png}}
+  \caption{Percent Capacity Filled by Mainline Carriers}
+  \label{percent_capacity_mainline}
+\end{figure}
+
+\subsection{Low-Cost Carriers and Ultra Low-Cost Carriers}
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{LCC-passengers-by-month.png}}
+  \caption{Percent Change in Total Passengers Per Month for Low Cost Carriers}
+  \label{passengers_monthly_lcc}
+\end{figure}
+
+Examining the low-cost carriers, we note that Allegiant consistently had a greater proportional increase in passenger numbers per month compared to the other airlines. When considering possible explanations for this, we note that Allegiant imposed a mask mandate in July 2020. This is two months later than when the other airlines enacted mask mandates, including Spirit, a direct ultra low-cost carrier competitor. Looking at the trend in percent change for these carriers more generally, we see that there is a gradual increase over time, just like we saw in the graph for the mainline legacy carriers. We see that there was little leisure travel in summer of 2020 because of how ULCCs still had lower numbers than their usually less strong February numbers.
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{southwest-passengers-per-month.png}}
+  \caption{Southwest's Percent Change in Total Passengers Per Month by Community Size}
+  \label{southwest_passengers_monthly}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \centerline{\includegraphics[width=6in, height=3in]{allegiant-passengers-per-month.png}}
+  \caption{Allegiant's Percent Change in Total Passengers Per Month by Community Size}
+  \label{allegiant_passengers_monthly}
+\end{figure}
+
+We now compare the trends in passengers per month by community size between Southwest and Allegiant. The reason for this comparison is that Southwest is considered a low-cost carrier while Allegiant is considered an ultra low-cost carrier, as they have different business models. Examining these graphs, we immediately notice that Allegiant’s graph has much greater volatility compared to the graph for Southwest, which has a steadier trend across communities. Most of the community sizes in both graphs seem to exhibit fairly similar trends throughout the whole period that we studied. This may be attributed to the minimum service requirements that the CARES Act imposed, but this is not certain, as the different community sizes exhibit similar trends before the act as well. To further study this issue, it would be valuable to simulate the trends across different community sizes without the CARES Act in place. Looking at the Southwest graph, we see one notable exception to this general homogeneity in trends across community sizes. It is evident that the small communities served by Southwest grew much more rapidly than the other community sizes, which may have to do with those flights being associated with more essential functions, such as work-related travel.
+
+\section{Flight Networks}
+
+\subsection{Connectivity of Small Communities}
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{DestinationQuintilesQ1Rel.png}}
+\caption{Destinations Quintiles for Origin Quintile 1 Communities}
+\label{dest_quint_q1_rel}
+\end{figure}
+
+\cref{dest_quint_q1_rel} depicts the percentage of routes by destination quintile for flights that originate in Quintile 1 communities. The highest percentage of routes are consistently to Quintile 3 communities with the exception of April 2020. The lowest percentage of routes are to Quintile 1 and Quintile 2 communities. From March 2020 to May 2020, the percentage of routes to Quintile 5 communities dropped significantly from 22.5\% to 12.4\%, while the percentage of routes to all other communities increased. Most notably, there is a large spike in the percentage of routes to Quintile 4 communities in April 2020, reaching 43.4\% of all routes.
+
+\begin{figure}[htbp!]
+\centerline{\includegraphics[width=6in, height=2in]{Top5Dest_OriginQ1.png}}
+\caption{Number of Routes from Quintile 1 Communities (Top 5 Destinations)}
+\label{Top5Dest_OriginQ1}
+\end{figure}
+
+In \cref{Top5Dest_OriginQ1}, for each destination quintile, we find the five airports with the most routes from Quintile 1 communities from January 2018 to June 2022 (25 airports total). We sum the number of routes flown between Quintile 1 communities and the five airports per month for each destination quintile. This is to account, to a limited extent, for the concept that there are relatively few airports in Quintile 5 communities than in other community sizes since there are fewer Quintile 5 communities as a whole. Likewise, there are many more airports in Quintile 3 and 4 communities than Quintile 5 since there are more communities that fall into the third or fourth quintile in population. We want to analyze how the composition of destinations from small communities changes proportionally from January 2018 to June 2022. Hence we want to consider the number of routes only to the top 5 destinations for each quintile rather than the total number of routes from Quintile 1 communities to \textit{all} airports in a given destination quintile.
+
+\-\hspace{0.5cm} Like \cref{dest_quint_q1_rel}, the data show that the greatest number of routes is to Quintile 3 airports and the consistently lowest number of routes is to Quintile 1 and Quintile 2 communities. In addition, there is large decrease in the number of routes for all quintiles, but with particularly large drops for Quintile 3, 4, and 5 destination airports. This is perhaps explained by lockdown procedures impacting flights to relatively larger communities while the fewer number of Q1-Q1 and Q1-Q2 flights were less impeded because of their importance for connectivity.
+
+\-\hspace{0.5cm} One particular area of interest became connectivity \textit{to} small communities from communities of other sizes. That is, while we have investigated how the destinations of flights from small communities have changed, we want to know how the pandemic has affected flights whose destination is in a small community. Recall that airports in Quintile 1 communities had the largest percent increase in passengers and seat levels between their lowest levels in April 2020 to July 2021. There is evidence to suggest that a small number of airports in Quintile 1 communities with highly seasonal demand from leisure travelers were responsible for the large increase in travel demand and consumption, particularly in the summer of 2021. 
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]
+	{Top5Dest_DestQ1.png}}
+\caption{Number of Flights to Top 5 Most Frequently Visited Q1 Destinations (2018-2022)}
+\label{Top5Dest_DestQ1}
+\end{figure}
+
+In \cref{Top5Dest_DestQ1}, we calculated the top five most frequently visited destinations by finding the airports in Quintile 1 communities with the greatest number of inbound routes. In descending order from January 2018 to June 2022, these are Bozeman Yellowstone Airport (BZN) in Belgrade, MT; Destin-Fort Walton Beach Airport (VPS) in Okaloosa County, FL; Sioux Falls Regional Airport (PSD) in Sioux Falls, SD; Burlington International Airport (BTV) in South Burlington, VT; and Hector International Airport (FAR) in Fargo, ND. All five airports are subject to seasonal variation, depending on demand and location. For instance, VPS--a warm destination--receives a high number of flights in the summer months relative to winter, while BTV--with ski opportunities--sees its highest number of flights over the winter holiday season. 
+
+\-\hspace{0.5cm} However, BZN and VPS in particular see a large spike in demand between April and October 2021, peaking between June and August. Both of these locations--Yellowstone and Destin-Fort Worth--are regarded nationally as significant summer vacation destinations. Over this period, flight numbers to BZN and VPS far outstrips that of even the next three top destinations, particularly when all five airports had flight numbers that were relatively comparable before May 2020. Our findings appear to only apply for Summer 2021, since flight levels for all five destinations returned to pre-pandemic levels by November 2021 and towards the beginning of Summer 2022, flight numbers were increasing dramatically for all five airports. It is only for the initial period after the pandemic that we see such a differentiation in flight levels between vacation destinations and other popular Quintile 1 airports.
+
+\-\hspace{0.5cm} More broadly, it appears to be that a relatively small proportion of Quintile 1 airports were responsible for a large number of total flights to Quintile 1 communities after the pandemic began.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=5.2in, height=2.7in]
+	{Distribution_DestQ1_Routes.png}}
+\caption{Distribution of Q1 Destination Airports by Number of Flights (2020-2022)}
+\label{Distribution_DestQ1_Routes}
+\end{figure}
+
+In \cref{Distribution_DestQ1_Routes}, we plot for each Quintile 1 airport the number of inbound routes from January 2020 to June 2022. We chose this time period because we want to investigate which airports took on the greatest numbers of connecting origin airports after the beginning of the pandemic. Since the distribution isn't uniform, we know that Quintile 1 airports receive varying numbers of routes. Indeed the mean number of routes is 159, and the standard deviation is 218. Moreover, since the distribution has a long right tail, it suggests that the most popular Quintile 1 airports received a disproportionate number of routes relative to all Quintile 1 airports. Note that the median of this distribution is 61 routes, which emphasizes that the mean level of routes is significantly increased by a few popular airports.
+
+\-\hspace{0.5cm} \cref{Histogram_DestQ1_Routes} provides an alternative visualization of this principle. Similar to \cref{Distribution_DestQ1_Routes}, we find the total number of inbound routes for each airport in Quintile 1 communities from January 2020 to June 2022.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=5.2in, height=2.7in]
+	{Histogram_DestQ1_Routes.png}}
+\caption{Quintile 1 Destination Airports by Number of Flights (2020-2022)}
+\label{Histogram_DestQ1_Routes}
+\end{figure}
+
+The vast majority of Quintile 1 airports received less than 100 unique routes over this time period, while two airports (Yellowstone and Destin-Fort Worth) received more than eight times the mean number of routes. Summary statistics for the distributions of airports in other quintiles by the number of inbound flights were also computed, which can be found as \cref{Table_Distribution_Dest} in the Appendix.
+
+\subsection{Flight Classes}
+
+From January 2018 to June 2022, we investigate the absolute and proportional values of four classes of flights depending on their content and status as scheduled or non-scheduled: Scheduled Passenger/Cargo (Class F), Nonscheduled Civilian Passenger/Cargo (Class L), Scheduled All-Cargo (Class G), and Nonscheduled Civilian Cargo (Class P).
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]
+	{Classes_Origin_All.png}}
+\caption{Routes per Class for All Communities (Absolute)}
+\label{Classes_Origin_All}
+\end{figure}
+
+\cref{Classes_Origin_All} shows how the number of flights of each class changed over the time period in absolute terms. The number of Class F flights are far higher than any other class, while, in line with data on departure, passenger, and seat levels, they decrease significantly between March 2020 and June 2020. Then from June 2020 to June 2021, the total number of Class F flights increases to near-baseline levels where they remain until June 2022. Before March 2020, there were on similar average levels of flights across Class G and Class L. However, after March 2020, Class L flights drop significantly while Class G flights are maintained, while after February 2021, there are consistently more Class L flights.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]
+	{Classes_Origin_All_Rel.png}}
+\caption{Routes per Class for All Communities (Percent Change)}
+\label{Classes_Origin_All_Rel}
+\end{figure}
+
+\cref{Classes_Origin_All_Rel} depicts the relative change in the number of routes for each flight class which. The greatest decline between January and April 2020 was for Class P flights. It's possible that the more ad-hoc nature of these flights (the flexible nature of chartering aircraft, paying per-mile) is responsible for greater variability as opposed to scheduled flights, which are operated by carriers on a more consistent basis. In addition, the number of routes serviced by Class G flights is the only class that did not suffer declines of over 15 percent between January 2020 and June 2020 during the start of the pandemic. Even in May 2020, when Class F, L, and P were over 25 percent below baseline, Class G was nearly 10 percent above baseline. This suggests that scheduled cargo flights were essential over the pandemic, continuing to run as other classes of flights saw substantial curtailment.
+
+\-\hspace{0.5cm} Now we focus on trends in particular community sizes, comparing flight class data in particular for Quintile 1 and Quintile 5 communities. The routes described originate in Quintile 1 and Quintile 5 respectively.
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]{Classes_OriginQ1.png}}
+\caption{Routes per Class for Quintile 1 Communities}
+\label{Classes_OriginQ1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]{Classes_OriginQ5.png}}
+\caption{Routes per Class for Quintile 5 Communities}
+\label{Classes_OriginQ5}
+\end{figure}
+
+\-\hspace{0.5cm} Note that there is a large amount of seasonal variation in the class F flights for Quintile 1 communities, shown in \cref{Classes_OriginQ1}. The number of routes increases significantly during the summer months and to a lesser, but still significant extent over the winter holidays. This magnitude of variation is not present in both the other 3 classes for Quintile 1 communities nor the flights for Quintile 5 communities shown in \cref{Classes_OriginQ5}. This provides more evidence that as a whole, scheduled passenger and flight demand from Quintile 1 airports is more variable than other communities for seasonal trends.
+
+\-\hspace{0.5cm} In addition, there is a significant spike in Class F route levels for Q1 communities in the summer of 2021, moving far above baseline, that is absent from the Quintile 5 data. That is, the recovery of scheduled passenger/cargo flights for Quintile 5 communities occurred more gradually than that for Quintile 1 communities, which then saw a decrease in Class F to baseline levels from August 2021 to the end of the year.
+
+\-\hspace{0.5cm} There is also a significantly greater proportion of Class G and P flights originating from Quintile 1 communities than Quintile 5 communities. One possible mechanism is that smaller communities service fewer passenger destinations than larger communities, which may be hubs for airlines. At the same time, both are used as cargo hubs which carry goods for further shipment or last-mile delivery. This helps to explain why there are proportionally more cargo flights (both scheduled and non-scheduled) relative to scheduled passenger flights for Quintile 1 communities.
+
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]{Classes_OriginQ1_Rel.png}}
+\caption{Routes per Class for Quintile 1 Communities (Percent Change)}
+\label{Classes_OriginQ1_rel}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=6in, height=2in]{Classes_OriginQ5_Rel.png}}
+\caption{Routes per Class for Quintile 5 Communities (Percent Change)}
+\label{Classes_OriginQ5_rel}
+\end{figure}
+
+\-\hspace{0.5cm} \cref{Classes_OriginQ1_rel} and \cref{Classes_OriginQ5_rel} also provide percent change visualization for each flight class. Most notably, we see very large spikes in Class G routes for Quintile 5 during each holiday season (October to January) and to a lesser extent in Quintile 1 communities. More broadly, Class G scheduled all-cargo saw very small declines across all periods of the pandemic, if any, relative to other flight classes. Indeed, there were more spikes above baseline than declines. These classes of flights were significantly more resilient in maintaining or increasing the number of routes than other classes.
+
+\subsection{Seasonality}
+Small airports are often very seasonal because they service particular destinations that attract more passengers at different times of year. Tourist attractions, such as beaches, national parks, or other vacation spots, tend to have large amounts of seasonal variation from month to month. In contrast, business destinations tend to have a more consistent number of passengers across all seasons. As a result, we constructed a seasonality index to measure an airport’s seasonality, and then found the most seasonal airports in order to determine whether seasonal airports had a better response to the COVID crisis. Thus, we used seasonality as a proxy to gauge the difference in recovery between business destinations and leisure destinations.
+
+\begin{figure}
+    \centering
+    \includegraphics{Seasonal vs Non-Seasonal Airport Prices.png}
+    \caption{Seasonal vs Non-Seasonal Airport Prices (by Passengers)}
+    \label{fig:Seasonal vs Non-Seasonal Airport Prices (by Passengers)}
+\end{figure}
+First, we measured the effect of passenger seasonality on prices over time. To do this, we selected the three most seasonal airports in quintile 1: Nantucket Airport (ACK), Jackson Hole Airport (JAC), and Rapid City Airport (RAP), which services Mount Rushmore. Then, we selected the airport with the median seasonality, Yuma International Airport (YUM), as a control. \cref{Seasonal vs Non-Seasonal Airport Prices} depicts the percent change in average meanfare over time to each of these airports. Notice, though, that all four airports had sharp price dips when the pandemic first hit, in the first quarter of 2020. However, only Nantucket Airport had a rapid price recovery as early as the fourth quarter of 2020. This makes sense, because it may be that a lot of passengers were escaping the city and heading to the beach in order to weather the worst of the pandemic. The other seasonal airports, however, look very similar to the control.
+\begin{figure}
+    \centering
+    \includegraphics{Seasonal vs Non-Seasonal Airport Prices (by routes).png}
+    \caption{Seasonal vs Non-Seasonal Airport Prices (by Routes)}
+    \label{Seasonal vs Non-Seasonal Airport Prices (by Routes)}
+\end{figure}
+Next, we measured the effect of route seasonality on prices over time. This time, Martha’s Vineyard Airport (MVY), Aspen Airport (ASE), and Eagle County Airport (EGE), which services Vail, a popular ski destination, were the most seasonal airports, and Waco Airport (ACT) was the control. This graph yielded very similar results (\cref{Seasonal vs Non-Seasonal Airport Prices (by Routes)}). Seasonal airports tended to have the same change in prices over time as the control. Flights to Martha’s Vineyard, however, had slightly quicker price recoveries because, as is the case with Nantucket, many passengers likely decided to escape the city and head to the beach.
+
+\begin{figure}
+    \centering
+    \includegraphics{Percent Change in Price for High Summer 2021 Passenger Airports.png}
+    \caption{Percent Change in Price for High Summer 2021 Passenger Airports}
+    \label{Percent Change in Price for High Summer 2021 Passenger Airports}
+\end{figure}
+Next, we noticed that some small airports, such as Raleigh County Airport (BKW), Yampa Valley Airport (HDN), and Hilton Head Airport (HHH), had particularly high passenger totals in the summer of 2021, particularly when compared to the passenger totals in the summer of 2018 and he summer of 2019 before the pandemic. We graphed these airports against a control, Gainesville Airport (GNV), to see whether high summer 2021 airports had a significant price difference in the recovery (\cref{Percent Change in Price for High Summer 2021 Passenger Airports}). Raleigh and Yampa airports had price trends that closely resembled the control, but Hilton Head Airport saw sharp decreases in price in the fourth quarter of 2020. As a result, we suspect that high passenger totals in the summer of 2021 did not have a significant effect on price recovery in the aftermath of the pandemic.
+
+\section*{Appendix}
+
+\begin{figure}[]
+\begin{tabular}{|l|r|r|r|r|}
+\hline
+   & \multicolumn{1}{l|}{\textbf{Mean}} & \multicolumn{1}{l|}{\textbf{Median}} & \multicolumn{1}{l|}{\textbf{SD}} & \multicolumn{1}{l|}{\textbf{Var}} \\ \hline
+\textbf{Q1} & 159                       & 61                          & 2.18E+02                & 4.73E+04                 \\ \hline
+\textbf{Q2} & 1084                      & 858                         & 9.70E+02                & 9.40E+05                 \\ \hline
+\textbf{Q3} & 4546                      & 3251                        & 5.10E+03                & 2.60E+07                 \\ \hline
+\textbf{Q4} & 4006                      & 637                         & 5.46E+03                & 2.98E+07                 \\ \hline
+\textbf{Q5} & 3679                      & 1443                        & 5.31E+03                & 2.82E+07                 \\ \hline
+\end{tabular}
+\caption{Distributions of Airports by Number of Inbound Routes}
+\label{Table_Distribution_Dest}
+\end{figure}
+
+
+\end{document}
